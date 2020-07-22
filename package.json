@@ -2,7 +2,7 @@
     "name": "react-press",
     "version": "0.1.0",
     "private": true,
-    "homepage": ".",
+    "homepage": "https://1577351xyh.github.io/react-ui-docs/#/install",
     "dependencies": {
         "prop-types": "^15.7.2",
         "react": "^16.8.3",
