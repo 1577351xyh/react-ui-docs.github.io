@@ -38,12 +38,12 @@ class App extends React.Component<{}, IAppState> {
       {
         path: '/install',
         content: 'Install',
-        page: InstallPage
+        page: InstallPage,
       },
       {
         path: '/start',
         content: 'Start',
-        page: StartPage
+        page: StartPage,
       },
       {
         path: '/components',
@@ -54,7 +54,7 @@ class App extends React.Component<{}, IAppState> {
               fontSize: '14px',
               lineHeight: '40px',
               fontWeight: 600,
-              color: 'rgba(0, 0, 0, 0.65)'
+              color: 'rgba(0, 0, 0, 0.65)',
             }}
           >
             Components
@@ -72,14 +72,14 @@ class App extends React.Component<{}, IAppState> {
               {
                 path: '/button',
                 content: 'Button',
-                page: ButtonPage
+                page: ButtonPage,
               },
               {
                 path: '/icon',
                 content: 'Icon',
-                page: IconPage
-              }
-            ]
+                page: IconPage,
+              },
+            ],
           },
           {
             path: '/data',
@@ -90,17 +90,17 @@ class App extends React.Component<{}, IAppState> {
               {
                 path: '/table',
                 content: 'Table',
-                page: TablePage
-              }
-            ]
-          }
-        ]
-      }
-    ]
+                page: TablePage,
+              },
+            ],
+          },
+        ],
+      },
+    ],
   }
 
   public renderRoute = (routes: IRouteOption[]): any => {
-    return routes.map(route => {
+    return routes.map((route) => {
       if (route.children && route.children.length) {
         return this.renderRoute(route.children)
       } else {
@@ -123,10 +123,10 @@ class App extends React.Component<{}, IAppState> {
                   height: '60px',
                   display: 'flex',
                   justifyContent: 'space-between',
-                  alignItems: 'center'
+                  alignItems: 'center',
                 }}
               >
-                <span>Header 内容自行替换</span>
+                <span style={{ paddingLeft: '30px' }}>Xu-React-Ui</span>
                 <div style={{ paddingRight: '20px' }}>
                   <Icon
                     name="github"
